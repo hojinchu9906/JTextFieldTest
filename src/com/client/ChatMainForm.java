@@ -51,6 +51,25 @@ public class ChatMainForm extends JFrame implements ActionListener,Runnable,Mous
 			}
 			
 		});
+		
+		
+		login.textField1.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				login.textField2.requestFocusInWindow();
+			}
+		});
+		
+		login.textField2.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				login.textField1.requestFocusInWindow();
+			}
+		});
     }
 
     public static void main(String[] args){
