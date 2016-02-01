@@ -89,9 +89,9 @@ public class ChatMainForm extends JFrame implements ActionListener,Runnable,Mous
 				public void keyPressed(KeyEvent e) {
 					// TODO Auto-generated method stub
 					super.keyPressed(e);
-		            if(!(e.getKeyChar()==27||e.getKeyChar()==65535))//this section will execute only when user is editing the JTextField
+		            if(!(e.getKeyChar()==27||e.getKeyChar()==65535))//유저가 JTextField를 수정했을때 실행됨
 		            {
-		                System.out.println("User is editing something in TextField");
+		                System.out.println("유저가 JTextField를 수정했을때 실행됨");
 		            }
 				}
 				
